@@ -354,7 +354,7 @@ const allQuestions = [
     question: "Por que o cronograma de obra de um projeto Built to Suit costuma ser alinhado ao contrato de locação desde o início?",
     options: ["A) Não costuma ter relação nenhuma", "B) Para alinhar a entrega do imóvel com a necessidade operacional do cliente, evitando atrasos que impactem o negócio", "C) Porque a lei exige isso em todos os casos", "D) Apenas por uma questão contábil"],
     correct: 1,
-    curiosity: "O prazo de entrega é planejado para coincidir exatamente com ambas as necessidades de funcionamento do cliente[cite: 1]."
+    curiosity: "O prazo de obra é planejado para coincidir com a necessidade de funcionamento do cliente[cite: 1]."
   }
 ];
 
@@ -420,19 +420,19 @@ export default function QuizAlfaBTS() {
       
       <div className="absolute inset-0 z-0 bg-gradient-to-b from-neutral-950/60 via-transparent to-neutral-950/90 pointer-events-none" />
 
-      {/* CABEÇALHO COM LOGOS COM ZOOM/ESCALA AUMENTADA */}
-      <header className="relative z-20 w-full max-w-md flex justify-between items-center pt-2">
-        <div className="bg-neutral-900/90 backdrop-blur-md border border-neutral-700 px-4 py-2 rounded-xl shadow-xl flex items-center h-20 w-36 justify-center overflow-hidden">
-          <img src={logoMaquisul} alt="Logo Maquisul" className="w-full h-full object-cover scale-125 object-center" />
+      {/* CABEÇALHO COM LOGOS REDimensionadas E COM ESPAÇAMENTO MAIOR DA CAIXA */}
+      <header className="relative z-20 w-full max-w-md flex justify-between items-center pt-4 mb-8">
+        <div className="bg-neutral-900/90 backdrop-blur-md border border-neutral-700 px-4 py-2 rounded-xl shadow-xl flex items-center h-16 w-36 justify-center overflow-hidden">
+          <img src={logoMaquisul} alt="Logo Maquisul" className="w-full h-full object-contain object-center p-1" />
         </div>
 
-        <div className="bg-neutral-900/90 backdrop-blur-md border border-neutral-700 px-4 py-2 rounded-xl shadow-xl flex items-center h-20 w-36 justify-center overflow-hidden">
-          <img src={logoAlfa} alt="Logo Alfa BTS" className="w-full h-full object-cover scale-125 object-center" />
+        <div className="bg-neutral-900/90 backdrop-blur-md border border-neutral-700 px-4 py-2 rounded-xl shadow-xl flex items-center h-16 w-36 justify-center overflow-hidden">
+          <img src={logoAlfa} alt="Logo Alfa BTS" className="w-full h-full object-contain object-center p-1" />
         </div>
       </header>
 
-      {/* CONTEÚDO PRINCIPAL */}
-      <main className="relative z-10 w-full max-w-md my-auto flex flex-col justify-center">
+      {/* CONTEÚDO PRINCIPAL COM MAIS DISTÂNCIA DO TOPO */}
+      <main className="relative z-10 w-full max-w-md my-auto flex flex-col justify-center mt-4">
         <AnimatePresence mode="wait">
           
           {gameState === 'welcome' && (
@@ -460,7 +460,7 @@ export default function QuizAlfaBTS() {
                 onClick={startQuiz}
                 className="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-neutral-950 font-black py-4 rounded-2xl shadow-xl uppercase tracking-wider text-sm cursor-pointer transition"
               >
-                Iniciar Desafio
+                Iniciar Desafio 
               </motion.button>
             </motion.div>
           )}
