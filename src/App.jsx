@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 import fundoImg from './assets/FUNDO ALFA BTS.png';
 import logoAlfa from './assets/logo alfa.png';
-import logoMaquisul from './assets/logo maquisul pequena.png';
 
 const allQuestions = [
   {
@@ -420,20 +419,15 @@ export default function QuizAlfaBTS() {
       
       <div className="absolute inset-0 z-0 bg-gradient-to-b from-neutral-950/60 via-transparent to-neutral-950/90 pointer-events-none" />
 
-      {/* CABEÇALHO COM LOGOS IGUALADAS */}
-      <header className="relative z-20 w-full max-w-md flex justify-between items-center pt-4 mb-8">
-        <div className="bg-neutral-900/90 backdrop-blur-md border border-neutral-700 px-4 py-2 rounded-xl shadow-xl flex items-center h-16 w-36 justify-center overflow-hidden">
-          <img src={logoMaquisul} alt="Logo Maquisul" className="w-full h-full object-contain object-center p-1" />
-        </div>
-
-        <div className="bg-neutral-900/90 backdrop-blur-md border border-neutral-700 px-4 py-2 rounded-xl shadow-xl flex items-center h-16 w-36 justify-center overflow-hidden">
-          {/* Adicionado scale-175 para dar zoom e igualar o tamanho visual com a Maquisul */}
-          <img src={logoAlfa} alt="Logo Alfa BTS" className="w-full h-full object-contain object-center p-1 scale-[2.75]" />
+      {/* CABEÇALHO CENTRALIZADO COM A LOGO DA ALFA MAIOR E PREENCHENDO O ESPAÇO */}
+      <header className="relative z-20 w-full max-w-md flex justify-center items-center pt-6 mb-6">
+        <div className="bg-neutral-900/90 backdrop-blur-md border border-neutral-700 px-6 py-3 rounded-2xl shadow-2xl flex items-center h-28 w-72 justify-center overflow-hidden">
+          <img src={logoAlfa} alt="Logo Alfa BTS" className="w-full h-full object-contain object-center scale-[3.5]" />
         </div>
       </header>
 
       {/* CONTEÚDO PRINCIPAL */}
-      <main className="relative z-10 w-full max-w-md my-auto flex flex-col justify-center mt-4">
+      <main className="relative z-10 w-full max-w-md my-auto flex flex-col justify-center mt-2">
         <AnimatePresence mode="wait">
           
           {gameState === 'welcome' && (
