@@ -551,7 +551,7 @@ export default function QuizAlfaBTS() {
               className="space-y-5 bg-neutral-900/80 backdrop-blur-lg border border-neutral-800 p-6 rounded-3xl shadow-2xl text-center"
             >
               <div className={`inline-block px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider ${isCorrect ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30' : 'bg-rose-500/20 text-rose-400 border border-rose-500/30'}`}>
-                {isCorrect ? '✨ Resposta Correta!' : '❌ Resposta Incorreta'}
+                {isCorrect ? ' Resposta Correta!' : ' Resposta Incorreta'}
               </div>
 
               <div className="bg-neutral-950/90 border border-neutral-800 p-5 rounded-2xl text-left space-y-2 shadow-inner">
