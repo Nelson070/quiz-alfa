@@ -488,7 +488,7 @@ export default function QuizAlfaBTS() {
                 onClick={startQuiz}
                 className="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-neutral-950 font-black py-4 rounded-2xl shadow-xl uppercase tracking-wider text-sm cursor-pointer transition"
               >
-                Iniciar Desafio 🚀
+                Iniciar Desafio 
               </motion.button>
             </motion.div>
           )}
